@@ -1,0 +1,2223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="X-Csrf-Token" content="2ce8b61f0a8be11198ec17f84bb75038">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=0.01">
+
+    <script src="https://connect.facebook.net/en_US/sdk.js?hash=802f601799e84a0cf339544aac5a2ca4&amp;ua=modern_es6" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script><script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery-1.8.3.js"></script>
+    <script type="application/javascript">
+        window.standaloneContest = false;
+        function adjustViewport() {
+            var screenWidthPx = Math.min($(window).width(), window.screen.width);
+            var siteWidthPx = 1100; // min width of site
+            var ratio = Math.min(screenWidthPx / siteWidthPx, 1.0);
+            var viewport = "width=device-width, initial-scale=" + ratio;
+            $('#viewport').attr('content', viewport);
+            var style = $('<style>html * { max-height: 1000000px; }</style>');
+            $('html > head').append(style);
+        }
+
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            adjustViewport();
+        }
+    </script>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="profileName" content="h2">
+    <meta name="google-site-verification" content="OTd2dN5x4nS4OPknPI9JFg36fKxjqY0i1PSfFPv_J90">
+    <meta property="fb:admins" content="100001352546622">
+    <meta property="og:image" content="//sta.codeforces.com/s/95304/images/codeforces-telegram-square.png">
+    <link rel="image_src" href="//sta.codeforces.com/s/95304/images/codeforces-telegram-square.png">
+    <meta property="og:title" content="Submission #768328 - Codeforces">
+    <meta property="og:description" content="">
+    
+    <meta property="og:site_name" content="Codeforces">
+    
+    
+    <meta name="gc" content="8e6e8ba8a1bd591871f7846ebd71f3c632971d4c">
+    
+    
+    
+    <meta name="utc_offset" content="+03:00">
+    <meta name="verify-reformal" content="f56f99fd7e087fb6ccb48ef2">
+    <title>Submission #768328 - Codeforces</title>
+        <meta name="description" content="Codeforces. Programming competitions and contests, programming community">
+        <meta name="keywords" content="programming algorithm contest competition informatics olympiads c++ java graphs vkcup">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/font-awesome.min.css" type="text/css" charset="utf-8">
+
+        <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Cuprum&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="//sta.codeforces.com/s/95304/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="//sta.codeforces.com/s/95304/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="//sta.codeforces.com/s/95304/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="//sta.codeforces.com/s/95304/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="//sta.codeforces.com/s/95304/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//sta.codeforces.com/s/95304/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="//sta.codeforces.com/s/95304/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="//sta.codeforces.com/s/95304/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="//sta.codeforces.com/s/95304/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="//sta.codeforces.com/s/95304/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="//sta.codeforces.com/s/95304/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="//sta.codeforces.com/s/95304/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="//sta.codeforces.com/s/95304/favicon-16x16.png">
+    <link rel="manifest" href="//sta.codeforces.com/s/95304/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="//sta.codeforces.com/s/95304/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--CombineResourcesFilter-->
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/prettify.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/clear.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/style.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/ttypography.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/problem-statement.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/second-level-menu.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/roundbox.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/datatable.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/table-form.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/topic.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/jquery.jgrowl.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/facebox.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/jquery.wysiwyg.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/jquery.autocomplete.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/codeforces.datepick.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/colorbox.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/jquery.drafts.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/status.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="//sta.codeforces.com/s/95304/css/community.css" type="text/css" charset="utf-8">
+
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config;executed=true">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+    });
+    </script>
+    <script type="text/javascript" async="" src="https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full">
+    </script>
+    <!-- /MathJax -->
+
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/prettify/prettify.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/pushstream.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.lavalamp.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.jgrowl.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.swipe.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/facebox.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.wysiwyg.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/controls/wysiwyg.colorpicker.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/controls/wysiwyg.table.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/controls/wysiwyg.image.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/controls/wysiwyg.link.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/ua-parser.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.datepick.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.ie6blocker.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.ba-bbq.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/jquery.drafts.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/clipboard.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/autosize.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/sjcl.js"></script>
+    <script type="text/javascript" src="/scripts/4beb776234dd2ad0e29dedd2dde36629/en/codeforces-options.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/codeforces.js?v=20160131"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/EventCatcher.js?v=20160131"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/js/preparedVerdictFormats-en.js"></script>
+    <!--/CombineResourcesFilter-->
+
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/markitup/skins/markitup/style.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//sta.codeforces.com/s/95304/markitup/sets/markdown/style.css" type="text/css" charset="utf-8">
+
+
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/markitup/jquery.markitup.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/95304/markitup/sets/markdown/set.js"></script>
+
+    <!--[if IE]>
+    <style>
+        #sidebar {
+            padding-left: 1em;
+            margin: 1em 1em 1em 0;
+        }
+    </style>
+    <![endif]-->
+
+
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax:focus, body :focus .MathJax {display: inline-table}
+.MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none; box-sizing: content-box}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_test {font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.MathJax_test.mjx-test-display {display: table!important}
+.MathJax_test.mjx-test-inline {display: inline!important; margin-right: -1px}
+.MathJax_test.mjx-test-default {display: block!important; clear: both}
+.MathJax_ex_box {display: inline-block!important; position: absolute; overflow: hidden; min-height: 0; max-height: none; padding: 0; border: 0; margin: 0; width: 1px; height: 60ex}
+.MathJax_em_box {display: inline-block!important; position: absolute; overflow: hidden; min-height: 0; max-height: none; padding: 0; border: 0; margin: 0; width: 1px; height: 60em}
+.mjx-test-inline .MathJax_left_box {display: inline-block; width: 0; float: left}
+.mjx-test-inline .MathJax_right_box {display: inline-block; width: 0; float: right}
+.mjx-test-display .MathJax_right_box {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Blank; src: url('about:blank')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+<body class=" "><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div><span style="display:none;" class="csrf-token" data-csrf="2ce8b61f0a8be11198ec17f84bb75038">&nbsp;</span>
+<!-- .notificationTextCleaner used in Codeforces.showAnnouncements() -->
+<div class="notificationTextCleaner" style="font-size: 0px"></div>
+<div class="button-up" style="display: none; opacity: 0.7; width: 30px; height: 100%; position: fixed; left: 0px; top: 0px; cursor: pointer; text-align: center; line-height: 30px; color: rgb(211, 219, 228); font-weight: bold; font-size: 20px;"><i class="icon-circle-arrow-up"></i></div>
+<div class="verdictPrototypeDiv" style="display: none;"></div>
+
+<!-- Codeforces JavaScripts. -->
+<script type="text/javascript">
+    String.prototype.hashCode = function() {
+        var hash = 0, i, chr;
+        if (this.length === 0) return hash;
+        for (i = 0; i < this.length; i++) {
+            chr   = this.charCodeAt(i);
+            hash  = ((hash << 5) - hash) + chr;
+            hash |= 0; // Convert to 32bit integer
+        }
+        return hash;
+    };
+
+    var queryMobile = Codeforces.queryString.mobile;
+    if (queryMobile === "true" || queryMobile === "false") {
+        Codeforces.putToStorage("useMobile", queryMobile == "true");
+    } else {
+        var useMobile = Codeforces.getFromStorage("useMobile");
+        if (useMobile === true || useMobile === false) {
+            if (useMobile != false) {
+                Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", useMobile));
+            }
+        }
+    }
+</script>
+<script type="text/javascript">
+    if (window.parent.frames.length > 0) {
+        window.stop();
+    }
+</script>
+
+
+<script type="text/javascript">
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '554666954583323',
+            xfbml      : true,
+            version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    (function () {
+        jQuery.expr[':'].containsCI = function(elem, index, match) {
+            return !match || !match.length || match.length < 4 || !match[3] || (
+                    elem.textContent || elem.innerText || jQuery(elem).text() || ''
+            ).toLowerCase().indexOf(match[3].toLowerCase()) >= 0;
+        }
+    }(jQuery));
+
+    $.ajaxPrefilter(function(options, originalOptions, xhr) {
+        var csrf = Codeforces.getCsrfToken();
+
+        if (csrf) {
+            var data = originalOptions.data;
+            if (originalOptions.data !== undefined) {
+                if (Object.prototype.toString.call(originalOptions.data) === '[object String]') {
+                    data = $.deparam(originalOptions.data);
+                }
+            } else {
+                data = {};
+            }
+            options.data = $.param($.extend(data, { csrf_token: csrf }));
+        }
+    });
+
+    window.getCodeforcesServerTime = function(callback) {
+        $.post("/data/time", {}, callback, "json");
+    }
+
+    window.updateTypography = function () {
+        $("div.ttypography code").addClass("tt");
+        $("div.ttypography pre>code").addClass("prettyprint").removeClass("tt");
+        $("div.ttypography table").addClass("bordertable");
+        prettyPrint();
+    }
+
+    $.ajaxSetup({ scriptCharset: "utf-8" ,contentType: "application/x-www-form-urlencoded; charset=UTF-8", headers: {
+        'X-Csrf-Token': Codeforces.getCsrfToken()
+    }});
+
+    window.updateTypography();
+
+    Codeforces.signForms();
+
+    setTimeout(function() {
+        $(".second-level-menu-list").lavaLamp({
+            fx: "backout",
+            speed: 700
+        });
+    }, 100);
+
+
+    Codeforces.countdown();
+    $("a[rel='photobox']").colorbox();
+
+
+    function showAnnouncements(json) {
+        //info("j=" + JSON.stringify(json));
+
+        if (json.t != "a") {
+            return;
+        }
+        // console.log("Got announcement from channel");
+        setTimeout(function() {
+            Codeforces.showAnnouncements(json.d, "en");
+        }, Math.random() * 500);
+    }
+
+    function showEventCatcherUserMessage(json) {
+        if (json.t == "s") {
+            var points = json.d[5];
+            var passedTestCount = json.d[7];
+            var judgedTestCount = json.d[8];
+            var verdict = preparedVerdictFormats[json.d[12]];
+            var verdictPrototypeDiv = $(".verdictPrototypeDiv");
+            verdictPrototypeDiv.html(verdict);
+            if (judgedTestCount != null && judgedTestCount != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-judged").text(judgedTestCount);
+            }
+            if (passedTestCount != null && passedTestCount != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-passed").text(passedTestCount);
+            }
+            if (points != null && points != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-points").text(points);
+            }
+            Codeforces.showMessage(verdictPrototypeDiv.text());
+        }
+    }
+
+    $(".clickable-title").each(function() {
+        var title = $(this).attr("data-title");
+        if (title) {
+            var tmp = document.createElement("DIV");
+            tmp.innerHTML = title;
+            $(this).attr("title", tmp.textContent || tmp.innerText || "");
+        }
+    });
+
+    $(".clickable-title").click(function() {
+        var title = $(this).attr("data-title");
+        if (title) {
+            Codeforces.alert(title);
+        } else {
+            Codeforces.alert($(this).attr("title"));
+        }
+    }).css("position", "relative").css("bottom", "3px");
+
+        Codeforces.showDelayedMessage();
+
+    Codeforces.reformatTimes();
+
+    //Codeforces.initializePubSub();
+    if (window.codeforcesOptions.subscribeServerUrl) {
+        window.eventCatcher = new EventCatcher(
+            window.codeforcesOptions.subscribeServerUrl,
+            [
+                Codeforces.getGlobalChannel(),
+                Codeforces.getUserChannel(),
+                Codeforces.getUserShowMessageChannel(),
+                Codeforces.getContestChannel(),
+                Codeforces.getParticipantChannel(),
+                Codeforces.getTalkChannel()
+            ]
+        );
+
+        if (Codeforces.getParticipantChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getParticipantChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getContestChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getContestChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getGlobalChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getGlobalChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getUserChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getUserChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getUserShowMessageChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getUserShowMessageChannel(), function(json) {
+                showEventCatcherUserMessage(json);
+            });
+        }
+    }
+
+    Codeforces.setupContestTimes("/data/contests");
+    Codeforces.setupSpoilers();
+    Codeforces.setupTutorials("/data/problemTutorial");
+        });
+    </script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-743380-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = (document.location.protocol == 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<div id="body">
+        
+
+<div class="side-bell" style="visibility: hidden; display: none; opacity: 0.7; width: 40px; position: fixed; right: 0; top: 0; cursor: pointer; text-align: center; line-height: 35px; color: #d3dbe4; font-weight: bold; font-size: 1.5rem;">
+    <span class="icon-stack" style="width: 100%;">
+        <i class="icon-circle icon-stack-base"></i>
+        <i class="icon-bell-alt icon-light"></i>
+    </span>
+    <br>
+    <span class="side-bell__count" style="position: relative; top: -10px;"></span>
+</div>
+
+
+<div id="header" style="position: relative;">
+    <div style="float:left;">
+            <a href="/"><img style="height: 50px; margin-top: 10px;" title="Make Codeforces, not Coronaforces" alt="Make Codeforces not Coronaforces" src="//sta.codeforces.com/s/95304/images/codeforces-vs-coronavirus-65.png"></a>
+    </div>
+    <div class="lang-chooser">
+        <div style="text-align: right;">
+            <a href="?locale=en"><img src="//sta.codeforces.com/s/95304/images/flags/24/gb.png" title="In English" alt="In English"></a>
+            <a href="?locale=ru"><img src="//sta.codeforces.com/s/95304/images/flags/24/ru.png" title="По-русски" alt="По-русски"></a>
+        </div>
+
+        <div>
+                        <a href="/enter?back=%2Fproblemset%2Fsubmission%2F1%2F768328">Enter</a>
+                     | 
+                        <a href="/register">Register</a>
+                    
+        </div>
+
+
+
+    </div>
+    <br style="clear: both;">
+</div>
+        
+
+    <div class="roundbox menu-box" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+    <div class="menu-list-container">
+    <ul class="menu-list main-menu-list">
+                <li class=""><a href="/">Home</a></li>
+                <li class=""><a href="/top">Top</a></li>
+                <li class=""><a href="/contests">Contests</a></li>
+                <li class=""><a href="/gyms">Gym</a></li>
+                <li class="current"><a href="/problemset">Problemset</a></li>
+                <li class=""><a href="/groups">Groups</a></li>
+                <li class=""><a href="/ratings">Rating</a></li>
+                <li class=""><a href="/apiHelp">API</a></li>
+                <li class=""><a href="/calendar">Calendar</a></li>
+                <li class=""><a href="/help">Help</a></li>
+                <li class=""><a href="/10years"><span style="color:#ce2a2a;font-weight:bold;">10 years! <i style="font-size:100%" class="icon-gift"></i></span></a></li>
+    </ul>
+        <form method="post" action="/search"><input type="hidden" name="csrf_token" value="2ce8b61f0a8be11198ec17f84bb75038">
+            <input class="search" name="query" data-isplaceholder="true" value="">
+        <input type="hidden" name="_tta" value="990"></form>
+    <br style="clear: both;">
+</div>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input.search").focus(function () {
+                if ($(this).attr("data-isPlaceholder") === "true") {
+                    $(this).val("");
+                    $(this).removeAttr("data-isPlaceholder");
+                }
+            });
+        });
+    </script>
+            <br style="height: 3em; clear: both;">
+
+        <div style="position: relative;">
+                <div id="pageContent">
+                    <div class="second-level-menu">
+
+<ul class="second-level-menu-list"><li class="backLava" style="position: absolute; display: block; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 39px; height: 20px;"><div class="leftLava"></div><div class="bottomLava"></div><div class="cornerLava"></div></li>
+        <li class="current selectedLava"><a href="/problemset">Main</a></li>
+        <li><a href="/problemsets/acmsguru">acmsguru</a></li>
+</ul>
+<span style="position:relative;vertical-align:top;">|</span>
+
+<ul class="second-level-menu-list"><li class="backLava" style="position: absolute; display: block; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 63px; height: 20px;"><div class="leftLava"></div><div class="bottomLava"></div><div class="cornerLava"></div></li>
+        <li class="selectedLava"><a href="/problemset">Problems</a></li>
+        <li><a href="/problemset/submit">Submit</a></li>
+        <li><a href="/problemset/status">Status</a></li>
+        <li><a href="/problemset/standings">Standings</a></li>
+        <li><a href="/problemset/customtest">Custom test</a></li>
+</ul>
+</div>
+
+    <style>
+        .diagnosticsResultMessage {
+            font-weight: bold;
+            margin: 1em 0 0;
+        }
+
+        .diagnosticsResultMessage .diagnosticsMessageType {
+            color: #E65100;
+        }
+
+        .source-copier {
+            font-size: 1.2rem;
+            float: right;
+            color: #888 !important;
+            cursor: pointer;
+            border: 1px solid rgb(185, 185, 185);
+            padding: 3px;
+            margin: 1px;
+            margin-right: 3px;
+            line-height: 1.1rem;
+            text-transform: none;
+        }
+
+        .source-copier:hover {
+            background-color: #def;
+        }
+    </style>
+
+
+
+<div class="datatable" style="background-color: #E1E1E1; padding-bottom: 3px;">
+            <div class="lt">&nbsp;</div>
+            <div class="rt">&nbsp;</div>
+            <div class="lb">&nbsp;</div>
+            <div class="rb">&nbsp;</div>
+
+            <div style="padding: 4px 0 0 6px;font-size:1.4rem;position:relative;">
+                General
+
+                <div style="position:absolute;right:0.25em;top:0.35em;">
+                    <span style="padding:0;position:relative;bottom:2px;" class="rowCount"></span>
+
+                    <img class="closed" src="//sta.codeforces.com/s/95304/images/icons/control.png">
+
+                    <span class="filter" style="display:none;">
+                        <img class="opened" src="//sta.codeforces.com/s/95304/images/icons/control-270.png">
+                        <input style="padding:0 0 0 20px;position:relative;bottom:2px;border:1px solid #aaa;height:17px;font-size:1.3rem;">
+                    </span>
+                </div>
+            </div>
+            <div style="background-color: white;margin:0.3em 3px 0 3px;position:relative;">
+            <div class="ilt">&nbsp;</div>
+            <div class="irt">&nbsp;</div>
+            <table class="">
+<tbody><tr>
+    <th style="width:2em;" class="top left">#</th>
+    <th style="width:12em;" class="top">Author</th>
+    <th style="width:2em;" class="top">Problem</th>
+    <th style="width:2em;" class="top">Lang</th>
+    <th style="width:8em;" class="top">Verdict</th>
+        <th style="width:2em;" class="top">Time</th>
+        <th style="width:2em;" class="top">Memory</th>
+    <th style="width:4em;" class="top">Sent</th>
+    <th style="width:4em;" class="top">Judged</th>
+    <th style="width:4em;" class="top right">&nbsp;</th>
+</tr>
+<tr>
+    <td class="bottom dark left">768328</td>
+    <td class="bottom dark">
+            Practice:<br>
+<a href="/profile/nab" title="Candidate Master nab" class="rated-user user-violet">nab</a>    </td>
+    <td class="bottom dark">
+        <a title="A - Theatre Square" href="/problemset/problem/1/A">1A</a>
+         - <span title="problem revision">8</span>
+    </td>
+    <td class="bottom dark">
+    Ruby
+    </td>
+    <td class="bottom dark">
+    <span class="verdict-accepted">Accepted</span>
+    </td>
+        <td class="bottom dark">
+            31 ms
+        </td>
+        <td class="bottom dark">
+            4 KB
+        </td>
+    <td class="bottom dark">2011-10-15 16:49:44</td>
+    <td class="bottom dark">2013-03-01 02:41:42</td>
+    <td class="bottom dark right">
+        <button style="padding: 0.05em; width: 80px;" class="showDiff" title="Compare">Compare</button>
+    </td>
+</tr>
+            </tbody></table>
+            </div>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                // Create new ':containsIgnoreCase' selector for search
+                jQuery.expr[':'].containsIgnoreCase = function(a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+                if (window.updateDatatableFilter == undefined) {
+                    window.updateDatatableFilter = function(i) {
+                        var parent = $(i).parent().parent().parent().parent();
+                        $("tr.no-items", parent).remove();
+                        $("tr", parent).hide().removeClass('visible');
+                        var text = $(i).val();
+                        if (text) {
+                            $("tr" + ":containsIgnoreCase('" + text + "')", parent).show().addClass('visible');
+                        } else {
+                            parent.find(".rowCount").text("");
+                            $("tr", parent).show().addClass('visible');
+                        }
+
+                        var found = false;
+                        var visibleRowCount = 0;
+                        $("tr", parent).each(function () {
+                            if (!found) {
+                                if ($(this).find("th").size() > 0) {
+                                    $(this).show().addClass('visible');
+                                    found = true;
+                                }
+                            }
+                            if ($(this).hasClass('visible')) {
+                                visibleRowCount++;
+                            }
+                        });
+                        if (text) {
+                            parent.find(".rowCount").text("Matches: " + (visibleRowCount - (found ? 1 : 0)));
+                        }
+                        if (visibleRowCount == (found ? 1 : 0)) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo($(parent).find('table'));
+                        }
+                        $(parent).find("tr td").removeClass("dark");
+                        $(parent).find("tr.visible:odd td").addClass("dark");
+                    }
+
+                    $(".datatable .closed").click(function () {
+                        var parent = $(this).parent();
+                        $(this).hide();
+                        $(".filter", parent).fadeIn(function () {
+                            $("input", parent).val("").focus().css("border", "1px solid #aaa");
+                        });
+                    });
+
+                    $(".datatable .opened").click(function () {
+                        var parent = $(this).parent().parent();
+                        $(".filter", parent).fadeOut(function () {
+                            $(".closed", parent).show();
+                            $("input", parent).val("").each(function () {
+                                window.updateDatatableFilter(this);
+                            });
+                        });
+                    });
+
+                    $(".datatable .filter input").keyup(function(e) {
+                        window.updateDatatableFilter(this);
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+
+                    $(".datatable table").each(function () {
+                        var found = false;
+                        $("tr", this).each(function () {
+                            if (!found && $(this).find("th").size() == 0) {
+                                found = true;
+                            }
+                        });
+                        if (!found) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo(this);
+                        }
+                    });
+
+                    // Applies styles to datatables.
+                    $(".datatable").each(function () {
+                        $(this).find("tr:first th").addClass("top");
+                        $(this).find("tr:last td").addClass("bottom");
+                        $(this).find("tr:odd td").addClass("dark");
+                        $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                        $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                    });
+
+                    $(".datatable table.tablesorter").each(function () {
+                        $(this).bind("sortEnd", function () {
+                            $(".datatable").each(function () {
+                                $(this).find("th, td")
+                                    .removeClass("top").removeClass("bottom")
+                                    .removeClass("left").removeClass("right")
+                                    .removeClass("dark");
+                                $(this).find("tr:first th").addClass("top");
+                                $(this).find("tr:last td").addClass("bottom");
+                                $(this).find("tr:odd td").addClass("dark");
+                                $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                                $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                            });
+                        });
+                    });
+                }
+        });
+    </script>
+
+    <div class="roundbox SubmissionDetailsFrameRoundBox-768328" style="margin-top:2em;font-size:1.1rem;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled">→ Source
+            <div class="top-links">
+            </div>
+        <div title="Copy" data-clipboard-target="#program-source-text" id="id009326872846007657" class="source-copier">Copy</div></div>
+    <pre id="program-source-text" class="prettyprint lang-rb linenums program-source prettyprinted" style="padding: 0.5em;"><ol class="linenums"><li class="L0"><span class="pln">a</span><span class="pun">,</span><span class="pln">b</span><span class="pun">,</span><span class="pln">c</span><span class="pun">=</span><span class="pln">gets</span><span class="pun">.</span><span class="pln">split</span><span class="pun">.</span><span class="pln">map </span><span class="pun">&amp;:</span><span class="pln">to_i</span><span class="pun">;</span><span class="pln">p </span><span class="pun">-</span><span class="pln">a</span><span class="pun">/</span><span class="pln">c</span><span class="pun">*(-</span><span class="pln">b</span><span class="pun">/</span><span class="pln">c</span><span class="pun">)</span></li></ol></pre>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function () {
+            String.prototype.replaceAll = function (search, replace) {
+                return this.split(search).join(replace);
+            };
+
+            $(".prettyprint.program-source").each(function() {
+                var preId = "program-source-text";
+                var cpyId = ("id" + Math.random()).replaceAll(".", "0");
+
+                var $copy = $("<div title='Copy' data-clipboard-target='#" + preId + "' id='" + cpyId + "' class='source-copier'>Copy</div>");
+                $(this).parent().find(".caption").append($copy);
+
+                var clipboard = new Clipboard('#' + cpyId, {
+                    text: function(trigger) {
+                        return Codeforces.filterClipboardText(document.querySelector('#' + preId).innerText);
+                    }
+                });
+
+                clipboard.on('success', function(e) {
+                    Codeforces.showMessage("The source code has been copied into the clipboard");
+                    e.clearSelection();
+                });
+            });
+        });
+    </script>
+
+
+        <div class="tests-placeholder">
+    <div class="roundbox testResultBoxPrototype" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">?</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">?</span> ms, <strong>memory</strong>: <span class="memoryConsumed">?</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type">Verdict: <span class="verdict">?</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">?</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">?</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">?</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">?</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div>
+
+    <style type="text/css">
+        .testResultBoxPrototype {
+            display: none;
+        }
+    </style>
+
+    <script type="application/javascript">
+        function toInteger(s) {
+            var result = parseInt(s);
+            if (isNaN(result)) {
+                result = 0;
+            }
+            return result;
+        }
+
+        function addTestBox(container, test, timeConsumed, memoryConsumed, verdict, accepted, rejected, input, output, answer,
+                            exitCode, checkerComment, checkerExitCode, diagnostics) {
+            var box = $(".testResultBoxPrototype").clone();
+            box.find(".test").text(test);
+
+            if (typeof timeConsumed == 'undefined' && typeof memoryConsumed == 'undefined') {
+                box.find(".tm_infoline").hide();
+            } else {
+                box.find(".timeConsumed").text(timeConsumed);
+                box.find(".memoryConsumed").text(Math.round(toInteger(memoryConsumed) / 1024));
+            }
+
+            if (typeof verdict == 'undefined') {
+                box.find(".verdict_infoline").hide();
+            } else {
+                box.find(".verdict").text(verdict);
+                if (accepted === "true") {
+                    box.find(".verdict_type").addClass("welldone");
+                }
+                if (rejected === "true") {
+                    box.find(".verdict_type").addClass("error");
+                }
+            }
+
+            if (typeof input == 'undefined') {
+                box.find(".input").closest(".file").hide();
+            } else {
+                box.find(".input").text(input);
+            }
+
+            if (typeof output == 'undefined') {
+                box.find(".output").closest(".file").hide();
+            } else {
+                box.find(".output").text(output);
+            }
+
+            if (typeof answer == 'undefined') {
+                box.find(".answer").closest(".file").hide();
+            } else {
+                box.find(".answer").text(answer);
+            }
+
+            if (typeof checkerComment == 'undefined') {
+                box.find(".checkerComment").closest(".file").hide();
+            } else {
+                box.find(".checkerComment").text(checkerComment);
+            }
+
+            if (typeof diagnostics == 'undefined') {
+                box.find(".diagnostics").closest(".file").hide();
+            } else {
+                box.find(".diagnostics").text(diagnostics);
+            }
+
+            box.removeClass("testResultBoxPrototype");
+            container.append(box);
+        }
+    </script>
+
+            <div class="click-to-view-tests-div smaller" style="margin-top: 1em; display: none;"><a href="#" class="click-to-view-tests">Click</a> to see test details</div>
+        <div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">1</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">15</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">6 6 4
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">4
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">4
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "4"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">2</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">15</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">1 1 1
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">1
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">1
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "1"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">3</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">2 1 1
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">2
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">2
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "2"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">4</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">15</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">1 2 1
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">2
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">2
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "2"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">5</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">2 2 1
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">4
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">4
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "4"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">6</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">2 1 2
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">1
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">1
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "1"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">7</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">1 1 3
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">1
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">1
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "1"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">8</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">4</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">2 3 4
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">1
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">1
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "1"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">9</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">15</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">12 13 4
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">12
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">12
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "12"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">10</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">4</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">222 332 5
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">3015
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">3015
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "3015"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">11</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">1000 1000 10
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">10000
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">10000
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "10000"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">12</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">4</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">1001 1000 10
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">10100
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">10100
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "10100"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">13</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">15</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">100 10001 1000000000
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">1
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">1
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "1"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">14</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">15</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">1000000000 1000000000 1000000000
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">1
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">1
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "1"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">15</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">15</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">1000000000 1000000000 999999999
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">4
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">4
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "4"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">16</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">1000000000 1000000000 192
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">27126743055556
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">27126743055556
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "27126743055556"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">17</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">1000000000 1000000000 1
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">1000000000000000000
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">1000000000000000000
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "1000000000000000000"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">18</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">15</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">1000000000 987654321 1
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">987654321000000000
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">987654321000000000
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "987654321000000000"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">19</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">456784567 1000000000 51
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">175618850864484
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">175618850864484
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "175618850864484"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div><div class="roundbox" style="margin-top:2em;font-size:0.8em;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled"><span class="test">20</span>
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="infoline tm_infoline"><strong>Time</strong>: <span class="timeConsumed">31</span> ms, <strong>memory</strong>: <span class="memoryConsumed">0</span> KB</div>
+        <div class="infoline verdict_infoline">
+            <div class="verdict_type welldone">Verdict: <span class="verdict">OK</span></div>
+        </div>
+
+        <div class="file input-view">
+            <div class="name">Input</div>
+            <div class="text"><pre class="input">39916800 134217728 40320
+</pre></div>
+        </div>
+
+        <div class="file output-view">
+            <div class="name">Participant's output</div>
+            <div class="text"><pre class="output">3295710
+</pre></div>
+        </div>
+
+        <div class="file answer-view">
+            <div class="name">Jury's answer</div>
+            <div class="text"><pre class="answer">3295710
+</pre></div>
+        </div>
+
+        <div class="file checker-comment-view">
+            <div class="name">Checker comment</div>
+            <div class="text"><pre class="checkerComment">ok 1 number(s): "3295710"
+</pre></div>
+        </div>
+
+        <div class="file diagnostics-result-comment-view" style="display: none;">
+            <div class="name">Diagnostics</div>
+            <div class="text"><pre class="diagnostics">?</pre></div>
+        </div>
+    </div></div>
+
+        <script type="application/javascript">
+            $(function () {
+                $(".click-to-view-tests").click(function() {
+                    var testsPlaceholder = $(".tests-placeholder");
+
+                    $.post("/data/submitSource", {submissionId: 768328}, function(data) {
+                        var testCount = data["testCount"];
+                        if (typeof testCount != 'undefined') {
+                            $(".click-to-view-tests-div").hide();
+                        }
+                        for (var test = 1; test <= testCount; test++) {
+                            var timeConsumed = data["timeConsumed#" + test];
+                            var memoryConsumed = data["memoryConsumed#" + test];
+                            var verdict = data["verdict#" + test];
+                            var accepted = data["accepted#" + test];
+                            var rejected = data["rejected#" + test];
+                            var input = data["input#" + test];
+                            var output = data["output#" + test];
+                            var answer = data["answer#" + test];
+                            var exitCode = data["exitCode#" + test];
+                            var checkerStdoutAndStderr = data["checkerStdoutAndStderr#" + test];
+                            var checkerExitCode = data["checkerExitCode#" + test];
+                            var diagnostics = data["diagnostics#" + test];
+                            console.log(test);
+                            addTestBox(testsPlaceholder, test, timeConsumed, memoryConsumed, verdict, accepted, rejected, input, output, answer, exitCode,
+                                checkerStdoutAndStderr, checkerExitCode, diagnostics);
+                        }
+                    });
+                    return false;
+                });
+            });
+        </script>
+
+
+<div class="submissions-diff-popup" style="display:none;width:900px;height:500px;overflow:auto;padding:1em;margin:1em;font-size:1.2rem;">
+
+<div>
+    <form class="getDiffForm" method="post" action="#"><input type="hidden" name="csrf_token" value="2ce8b61f0a8be11198ec17f84bb75038">
+        <table>
+            <tbody>
+            <tr>
+                <td style="padding-right: 1em !important;">
+                    <label for="previousSubmissionId">Previous Submission:</label>
+                    <input type="text" name="previousSubmissionId" value="768314">
+         <div class="shiftUp error__previousSubmissionId">
+             <span class="error for__previousSubmissionId " style="display: none;">&nbsp;</span>
+             <span class="notice for__previousSubmissionId ">&nbsp;</span>
+         </div>
+                </td>
+                <td style="padding-right: 1em !important;">
+                    <label for="previousSubmissionId">Current Submission:</label>
+                    <input type="text" name="currentSubmissionId" value="768328">
+         <div class="shiftUp error__currentSubmissionId">
+             <span class="error for__currentSubmissionId " style="display: none;">&nbsp;</span>
+             <span class="notice for__currentSubmissionId ">&nbsp;</span>
+         </div>
+                </td>
+                <td>
+                    <input type="submit" value="Compare">
+                    <img class="waitingIndicator" style="display: none" src="//sta.codeforces.com/s/95304/images/indicator.gif" alt="waiting...">
+         <div class="shiftUp error__diffFormSubmit">
+             <span class="error for__diffFormSubmit " style="display: none;">&nbsp;</span>
+             <span class="notice for__diffFormSubmit ">&nbsp;</span>
+         </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    <input type="hidden" name="_tta" value="990"></form>
+    <div class="diffHtmlTarget"></div>
+</div>
+<script type="text/javascript">
+    Codeforces.getDiffFormSubmitListener = function (event) {
+        Codeforces.clearAjaxFormErrors();
+        var waitingIndicator = $(this).find(".waitingIndicator");
+        waitingIndicator.show();
+
+        var previousSubmissionId = $(this).find("input[name='previousSubmissionId']").val();
+        var currentSubmissionId = $(this).find("input[name='currentSubmissionId']").val();
+        var targetDiv = $(this).next();
+        $.post("/data/submissionsDiff",
+            {action: "getDiff", previousSubmissionId: previousSubmissionId, currentSubmissionId: currentSubmissionId},
+            function (response) {
+                waitingIndicator.hide();
+                targetDiv.html("");
+
+                if (response["success"] == "true") {
+                    targetDiv.html("<pre class=\"prettyprint\">" + response["diffHtml"] + "</pre>");
+                    prettyPrint();
+                } else {
+                    Codeforces.setAjaxFormErrors(".getDiffForm", response);
+                }
+            },
+            "json"
+        );
+        return false;
+    };
+</script></div>
+
+    <div class="add-submission-to-problem-solutions-box" style="display: none; width: 500px">
+        <form method="POST"><input type="hidden" name="csrf_token" value="2ce8b61f0a8be11198ec17f84bb75038">
+            <h5>Add solution to problem</h5>
+            <hr>
+            <table class="table-form">
+                
+                <tbody><tr>
+                    <td class="field-name">Filename:</td>
+                    <td><input style="width: 300px;box-sizing: border-box;" class="filename-field" type="text" value="768328_nab_ok.rb"></td>
+                </tr>
+                <tr>
+                    <td class="field-name">Solution tag:</td>
+                    <td>
+                        <select class="solutionTag-field" style="width: 300px">
+                                <option value="ACCEPTED" selected="">
+                                    Correct
+                                </option>
+                                <option value="REJECTED">
+                                    Incorrect
+                                </option>
+                                <option value="TIME_LIMIT_EXCEEDED">
+                                    Time limit exceeded
+                                </option>
+                                <option value="WRONG_ANSWER">
+                                    Wrong answer
+                                </option>
+                                <option value="PRESENTATION_ERROR">
+                                    Presentation error
+                                </option>
+                                <option value="MEMORY_LIMIT_EXCEEDED">
+                                    Memory limit exceeded
+                                </option>
+                                <option value="FAILED">
+                                    Failed
+                                </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" class="submit" value="Add" autofocus="">
+                    </td>
+                </tr>
+                
+            </tbody></table>
+        <input type="hidden" name="_tta" value="990"></form>
+    </div>
+
+<script type="text/javascript">
+    $(function () {
+        $("button.showDiff").click(function () {
+            Codeforces.facebox(".submissions-diff-popup", "//sta.codeforces.com/s/95304");
+            var getDiffForms = $(".getDiffForm");
+            getDiffForms.submit(Codeforces.getDiffFormSubmitListener);
+            getDiffForms.submit();
+        });
+
+        $("button.challengeButton").click(function () {
+            Codeforces.redirect($(this).attr("data-href"));
+        });
+
+        $("form.add-submission-to-problem-solutions").submit(function () {
+            var a = $(this);
+            Codeforces.facebox(".add-submission-to-problem-solutions-box", "//sta.codeforces.com/s/95304");
+            $(".add-submission-to-problem-solutions-box .submit").focus();
+            $(".add-submission-to-problem-solutions-box form").submit(function() {
+                var filenameField = $(this).find(".filename-field");
+                var filename = filenameField.val();
+                var solutionTag = $(this).find(".solutionTag-field").val();
+                $.post("/data/submissionAddToProblemSolutions", {
+                        action: "addToProblemSolutions", submissionId: 768328, filename: filename, solutionTag: solutionTag}, function(json) {
+                    if (json.success === "true") {
+                        window.alert("The solution has been added!");
+                        Codeforces.reload();
+                    } else {
+                        window.alert("Can't add solution: " + json.error);
+                    }
+                }, "json");
+                return false;
+            });
+            return false;
+        });
+    });
+</script>                </div>
+        </div>
+            <br style="clear: both;">
+            <div id="footer">
+                <div><a href="https://codeforces.com/">Codeforces</a> (c) Copyright 2010-2020 Mike Mirzayanov</div>
+                <div>The only programming contests Web 2.0 platform</div>
+                    <div>Server time: May/07/2020 16:58:28<sup title="timezone offset" style="font-size:8px;">UTC+8</sup> (h2).</div>
+                    <div>Desktop version, switch to <a rel="nofollow" class="switchToMobile" href="?mobile=true">mobile version</a>.</div>
+                <div class="smaller"><a href="/privacy">Privacy Policy</a></div>
+
+                    <div style="margin-top: 25px;">
+                        Supported by
+                    </div>
+                    <div style="margin-top: 8px; padding-bottom: 20px; position: relative; left: 10px;">
+                        <a href="https://telegram.org/"><img style="margin-right: 2em; width: 60px;" src="//sta.codeforces.com/s/95304/images/telegram-100x100.png" alt="Telegram" title="Telegram"></a>
+                        <a href="http://ifmo.ru/en/"><img style="width: 120px;" src="//sta.codeforces.com/s/95304/images/itmo_small_en-logo.png" alt="ИТМО" title="ИТМО"></a>
+                    </div>
+            </div>
+        <script type="text/javascript">
+            $(function() {
+                $(".switchToMobile").click(function() {
+                    Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", "true"));
+                    return false;
+                });
+                $(".switchToDesktop").click(function() {
+                    Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", "false"));
+                    return false;
+                });
+            });
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if ($(window).width() < 1600) {
+                $('.button-up').css('width', '30px').css('line-height', '30px').css('font-size', '20px');
+            }
+
+            if ($(window).width() >= 1200) {
+                $ (window).scroll (function () {
+                    if ($ (this).scrollTop () > 100) {
+                        $ ('.button-up').fadeIn();
+                    } else {
+                        $ ('.button-up').fadeOut();
+                    }
+                });
+
+                $('.button-up').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 500);
+                    return false;
+                });
+
+                $('.button-up').hover(function () {
+                    $(this).animate({
+                        'opacity':'1'
+                    }).css({'background-color':'#e7ebf0','color':'#6a86a4'});
+                }, function () {
+                    $(this).animate({
+                        'opacity':'0.7'
+                    }).css({'background':'none','color':'#d3dbe4'});;
+                });
+            }
+            Codeforces.focusOnError();
+        });
+    </script>
+
+        <div class="userListsFacebox" style="display:none;">
+            <div style="padding: 0.5em; width: 600px; max-height: 200px; overflow-y: auto">
+<div class="datatable" style="background-color: #E1E1E1; padding-bottom: 3px;">
+            <div class="lt">&nbsp;</div>
+            <div class="rt">&nbsp;</div>
+            <div class="lb">&nbsp;</div>
+            <div class="rb">&nbsp;</div>
+
+            <div style="padding: 4px 0 0 6px;font-size:1.4rem;position:relative;">
+                User lists
+
+                <div style="position:absolute;right:0.25em;top:0.35em;">
+                    <span style="padding:0;position:relative;bottom:2px;" class="rowCount"></span>
+
+                    <img class="closed" src="//sta.codeforces.com/s/95304/images/icons/control.png">
+
+                    <span class="filter" style="display:none;">
+                        <img class="opened" src="//sta.codeforces.com/s/95304/images/icons/control-270.png">
+                        <input style="padding:0 0 0 20px;position:relative;bottom:2px;border:1px solid #aaa;height:17px;font-size:1.3rem;">
+                    </span>
+                </div>
+            </div>
+            <div style="background-color: white;margin:0.3em 3px 0 3px;position:relative;">
+            <div class="ilt">&nbsp;</div>
+            <div class="irt">&nbsp;</div>
+            <table class="">
+                    <thead>
+                    <tr>
+                        <th class="top left right">Name</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="no-items visible"><td style="text-align:left;" colspan="32" class="bottom dark left right">No items</td></tr></tbody>
+            </table>
+            </div>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                // Create new ':containsIgnoreCase' selector for search
+                jQuery.expr[':'].containsIgnoreCase = function(a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+                if (window.updateDatatableFilter == undefined) {
+                    window.updateDatatableFilter = function(i) {
+                        var parent = $(i).parent().parent().parent().parent();
+                        $("tr.no-items", parent).remove();
+                        $("tr", parent).hide().removeClass('visible');
+                        var text = $(i).val();
+                        if (text) {
+                            $("tr" + ":containsIgnoreCase('" + text + "')", parent).show().addClass('visible');
+                        } else {
+                            parent.find(".rowCount").text("");
+                            $("tr", parent).show().addClass('visible');
+                        }
+
+                        var found = false;
+                        var visibleRowCount = 0;
+                        $("tr", parent).each(function () {
+                            if (!found) {
+                                if ($(this).find("th").size() > 0) {
+                                    $(this).show().addClass('visible');
+                                    found = true;
+                                }
+                            }
+                            if ($(this).hasClass('visible')) {
+                                visibleRowCount++;
+                            }
+                        });
+                        if (text) {
+                            parent.find(".rowCount").text("Matches: " + (visibleRowCount - (found ? 1 : 0)));
+                        }
+                        if (visibleRowCount == (found ? 1 : 0)) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo($(parent).find('table'));
+                        }
+                        $(parent).find("tr td").removeClass("dark");
+                        $(parent).find("tr.visible:odd td").addClass("dark");
+                    }
+
+                    $(".datatable .closed").click(function () {
+                        var parent = $(this).parent();
+                        $(this).hide();
+                        $(".filter", parent).fadeIn(function () {
+                            $("input", parent).val("").focus().css("border", "1px solid #aaa");
+                        });
+                    });
+
+                    $(".datatable .opened").click(function () {
+                        var parent = $(this).parent().parent();
+                        $(".filter", parent).fadeOut(function () {
+                            $(".closed", parent).show();
+                            $("input", parent).val("").each(function () {
+                                window.updateDatatableFilter(this);
+                            });
+                        });
+                    });
+
+                    $(".datatable .filter input").keyup(function(e) {
+                        window.updateDatatableFilter(this);
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+
+                    $(".datatable table").each(function () {
+                        var found = false;
+                        $("tr", this).each(function () {
+                            if (!found && $(this).find("th").size() == 0) {
+                                found = true;
+                            }
+                        });
+                        if (!found) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo(this);
+                        }
+                    });
+
+                    // Applies styles to datatables.
+                    $(".datatable").each(function () {
+                        $(this).find("tr:first th").addClass("top");
+                        $(this).find("tr:last td").addClass("bottom");
+                        $(this).find("tr:odd td").addClass("dark");
+                        $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                        $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                    });
+
+                    $(".datatable table.tablesorter").each(function () {
+                        $(this).bind("sortEnd", function () {
+                            $(".datatable").each(function () {
+                                $(this).find("th, td")
+                                    .removeClass("top").removeClass("bottom")
+                                    .removeClass("left").removeClass("right")
+                                    .removeClass("dark");
+                                $(this).find("tr:first th").addClass("top");
+                                $(this).find("tr:last td").addClass("bottom");
+                                $(this).find("tr:odd td").addClass("dark");
+                                $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                                $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                            });
+                        });
+                    });
+                }
+        });
+    </script>
+            </div>
+        </div>
+        <script type="application/javascript">
+            $(function() {
+                $(".userListMarker").click(function() {
+                    $.post("/data/lists", {action: "findTouched"}, function(json) {
+                        Codeforces.facebox(".userListsFacebox");
+                        var tbody = $("#facebox tbody");
+                        tbody.empty();
+                        for (var i in json) {
+                            tbody.append(
+                                    $("<tr></tr>").append(
+                                            $("<td></td>").attr("data-readKey", json[i].readKey).text(json[i].name)
+                                    )
+                            );
+                        }
+                        Codeforces.updateDatatables();
+                        tbody.find("td").css("cursor", "pointer").click(function() {
+                            document.location = Codeforces.updateUrlParameter(document.location.href, "list", $(this).attr("data-readKey"));
+                        });
+                    }, "json");
+                });
+            });
+        </script>
+</div>
+    <script type="application/javascript">
+        if ('serviceWorker' in navigator && 'fetch' in window && 'caches' in window) {
+            var parser = new UAParser();
+            var browserName = parser.getBrowser().name;
+            var browserVersion = parser.getBrowser().version;
+
+            var supportedBrowser = false;
+            var supportedBrowsers = {
+                "Chrome": "76",
+                "Firefox": "68",
+                // "Edge": "18",
+                "Safari": "12.1",
+                "Opera": "63",
+                "Yandex": "19.9"
+            };
+
+            for (var name in supportedBrowsers) {
+                if (name === browserName && supportedBrowsers[name] <= browserVersion) {
+                    supportedBrowser = true;
+                }
+            }
+
+            if (supportedBrowser) {
+                navigator.serviceWorker.register('/service-worker-95304.js')
+                    .then(function (registration) {
+                        console.log('Service worker registered');
+                    })
+                    .catch(function (error) {
+                        console.log('Registration failed: ', error);
+                    });
+            } else {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    for (var i = 0; i < registrations.length; i++) {
+                        registrations[i].unregister();
+                    }
+                });
+            }
+        }
+    </script>
+
+
+<div id="datepick-div" style="display: none;"></div><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none; padding-bottom: 42px; padding-right: 42px;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; min-width: 0px; max-width: none; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: STIXSizeOneSym, sans-serif;"></div></div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div></body></html>
